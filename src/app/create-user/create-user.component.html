@@ -1,0 +1,36 @@
+<div class="container"> 
+    <h2>Add User</h2>
+    <form>
+
+      <!--<div class="form-group">
+        <label>id:</label>
+        <input type="number" class="form-control" [(ngModel)]="formdata.id" name="id"><br><br>
+      </div>
+
+      <div class="form-group">
+        <label>Name:</label>
+        <input type="text" class="form-control" [(ngModel)]="formdata.name" name="name"><br><br>
+      </div>
+  
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" class="form-control" [(ngModel)]="formdata.email" name="email"><br><br>
+      </div>
+
+      <button class="btn btn-primary" (click)="create()" routerLink="/user" routerLinkActive="active" type="submit">Submit</button>-->
+
+      <div class="mb-3">
+        <label for="txtName" class="form-label">Name</label>
+        <input type="text" name="name" [(ngModel)]="formdata.name" class="form-control" id="txtName"  />
+      </div>
+
+      <div class="mb-3">
+        <label for="txtEmail" class="form-label">Email</label>
+        <input type="text" name="email" class="form-control" [(ngModel)]="formdata.email"  id="txtEmail"  />
+
+      </div>
+
+      <button class="btn btn-primary" (click)="create()" routerLink="/user" routerLinkActive="active" type="button">Add</button>
+      
+    </form>
+  </div>
